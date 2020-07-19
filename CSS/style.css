@@ -1,0 +1,370 @@
+/* BASIC STYLES */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/* NAV BAR */
+#nav_bar {
+  float: right;
+}
+
+#nav_bar li {
+  display: inline-block;
+  padding: 8px;
+}
+
+#nav_bar #sign_in {
+  background: #4887ef;
+  margin-right: 25px;
+  padding: 7px 15px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.nav-links {
+  color: #8f8c8c;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li.nav-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* GOOGLE AREA */
+.google #google_logo {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  clear: both;
+  padding-top: 112px;
+  padding-bottom: 20px;
+}
+
+.form {
+  text-align: center;
+}
+
+#form-search {
+  width: 550px;
+  height: 40px;
+  margin-left: 350px;
+  padding-left: 15px;
+  font-size: 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3%;
+  box-shadow: 0px 3px 0px 0px #e5e5e5;
+}
+
+#form-search:hover {
+  border-color: #e4e4e4;
+  padding-top: 0;
+}
+.buttons {
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 300px;
+}
+
+/* FOOTER */
+footer {
+  background: #f2f2f2;
+  border-top: solid 2px #e4e4e4;
+  /*   position: fixed; */
+  bottom: 0;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+footer ul li {
+  display: inline;
+  color: #666666;
+  font-size: 14px;
+  padding: 13px;
+}
+
+footer ul {
+  float: left;
+  padding: 1px;
+}
+
+footer ul a:hover {
+  text-decoration: underline;
+}
+
+.footer-right {
+  float: right;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 400px) {
+  li.nav-links a {
+    display: none;
+  }
+
+  #google_logo {
+    padding: 0;
+  }
+
+  .buttons {
+    display: none;
+  }
+/* FOOTER */
+
+  footer {
+    bottom: 0;
+  }
+
+  footer ul {
+    float: none;
+    padding-bottom: 2px;
+  }
+
+  .footer-left {
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+  }
+
+  .footer-right {
+    float: none;
+    text-align: center;
+  }
+}
+/* FOOTER */
+
+@media screen and (max-width: 565px) {
+  li.nav-links a {
+    display: none;
+  }
+
+  #google_logo {
+    padding: 0;
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  footer {
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+  }
+
+  footer ul {
+    float: none;
+    padding-bottom: 2px;
+  }
+
+  .footer-left {
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+  }
+
+  .footer-right {
+    float: none;
+    text-align: center;
+  }
+}
+
+/*select any elements with a class of button-site-links*/
+.bottom-site-links {
+  bottom: 0 !important;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
+/*select any elements with a class of left-site-links*/
+.left-site-links, 
+  /*and select any elements with a class of right-site-links*/
+  .right-site-links {
+  margin: 0;
+}
+/*select any elements with a class of left-site-links*/
+.left-site-links {
+  float: left;
+  padding-left: 20px;
+}
+/*select any elements with a class of right-site-links*/
+.right-site-links {
+  float: right;
+  padding-right: 10px;
+}
+/*select any elements with a class of left-site-links and find all li tags inside*/
+.left-site-links li,
+  /*and select any elements with a class of right-site-links and find all li tags inside*/
+  .right-site-links li {
+  list-style: none;
+  display: inline;
+  line-height: 40px;
+}
+/*select any elements with a class of right-site-links and find all li tags inside then the 1st anchor tags inside*/
+.right-site-links li a:first-child {
+  padding-right: 8px;
+}
+/*select any elements with a class of left-site-links and find all li tags inside then the 2nd anchor tags inside*/
+.left-site-links li:nth-child(2),
+  /*and select any elements with a class of left-site-links and find all li tags inside then the 3rd anchor tags inside*/
+  .left-site-links li:nth-child(3) {
+  margin-left: 7px;
+}
+/*select any elements with a class of left-site-links and find all li tags inside then all the anchor tags inside*/
+.left-site-links li a,
+  /*and select any elements with a class of right-site-links and find all li tags inside then all the anchor tags inside*/
+  .right-site-links li a {
+  color: #666;
+  margin: 2px 10px 0;
+  letter-spacing: 0.1px;
+  font-size: 14px;
+}
+
+/* FOOTER */
+
+.toggler {
+  display: none;
+}
+
+.ham-checkbox {
+  display: none;
+}
+
+.my-nav {
+  margin-top: 1%;
+  margin-right: 1%;
+}
+
+@media only screen and (max-width: 450px) {
+  .toggler {
+    float: right;
+    display: block;
+    cursor: pointer;
+    margin-top: 1%;
+    margin-right: 1%;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+  }
+  .my-nav-bar {
+    clear: both;
+    display: none;
+  }
+  .nav-item {
+    clear: both;
+    display: block;
+  }
+  .my-nav {
+    clear: both;
+    display: block;
+    text-align: center;
+    margin-right: 0;
+  }
+  #toggle:checked + .my-nav-bar {
+    clear: both;
+    display: block;
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+  }
+  .submit-button {
+    display: block;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f2f2f2;
+  }
+
+  .adv-container-style {
+    clear: both;
+    margin-top: 5%;
+    margin-left: 3%;
+  }
+
+  .adv-form-style {
+    margin-top: 2%;
+  }
+
+  .form-group-style {
+    margin-top: 2%;
+  }
+
+  .adv-search-button {
+    float: right;
+    margin-bottom: 2%;
+    background-color: #4d90fe;
+    text-align: center;
+    color: white;
+  }
+
+  body {
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+  input[type="text"] {
+    padding: 4px 10px;
+    width: 300px;
+  }
+  .form {
+    transform: translateY(240%);
+  }
+  .btn-search {
+    height: 40px;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .btn-search {
+    height: 40px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #f7f7f7;
+    width: 500px;
+    margin-left: 700px;
+    padding-left: 15px;
+    font-size: 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3%;
+    box-shadow: 0px 3px 0px 0px #e5e5e5;
+  }
+
+  input[type="text"] {
+    padding: 4px 10px;
+    width: 300px;
+  }
+
+  td {
+    padding: 10px;
+  }
+
+  #query {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    height: 24px;
+    padding: 4px 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #cccccc;
+  }
+  
+      
